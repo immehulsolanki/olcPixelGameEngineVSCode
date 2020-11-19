@@ -38,7 +38,7 @@ You are not supposed to find this libs manually it comes with the compiler it se
 ![olcPixelGameEngineVSCode](./resources/img3.JPG)
 - **step2**: Winlibs Mingw comes with compressed file type, its stand alone prebuilt binary within single folder. No installation required, just copy and past it.
 - **step3**: Extract xxmingwxx.7z and you will get **mingw** folder along with all the necessory files, so now copy **mingw** folder to **C:/** drive manually.
-![olcPixelGameEngineVSCode](./resources/img4.JPG)
+![olcPixelGameEngineVSCode](./resources/img4.jpg)
 - **step4**: Set windows environment variable path which points compiler as "C:\mingw64\bin"
 ![olcPixelGameEngineVSCode](./resources/img1.JPG)
 - **step5**: Restart PC.
