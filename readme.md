@@ -11,12 +11,12 @@ Provides a fast, richly featured, cross platform pixel drawing and user interfac
 - Education
 - Handcrafted C++ GUI
 
-Reference: https://github.com/OneLoneCoder/olcPixelGameEngine
+Source: https://github.com/OneLoneCoder/olcPixelGameEngine
 
 # olcPixelGameEngine with VSCode [Windows10]:
 **Requirement:**
-1. Latest VSCode for Windows [Download](https://code.visualstudio.com/)
-2. Latest MinGW from Winlibs with atleast **GCC version 10.2.x** [Download](http://winlibs.com/)
+1. Latest VSCode for Windows [ [Download](https://code.visualstudio.com/) ]
+2. Latest MinGW from Winlibs with atleast **GCC version 10.2.x** [ [Download](http://winlibs.com/) ]
 
 Note: This setup is tested with "GCC 10.2.0 + LLVM/Clang/LLD/LLDB 11.0.0 + MinGW-w64 8.0.0 - release 3" on Windows10 machine updated as on 18 November 2020.
 
@@ -35,26 +35,61 @@ You are not supposed to find this libs manually it comes with the compiler it se
 
 - **step1**: Install VSCode as normal software installtion, no special steps required.
 - **step2**: Open VSCode and press **ctrl+shft+x** and install *C/C++ extension by Microsoft*.
+
 ![olcPixelGameEngineVSCode](./resources/img3.JPG)
+
 - **step2**: Winlibs Mingw comes with compressed file type, its stand alone prebuilt binary within single folder. No installation required, just copy and past it.
 - **step3**: Extract xxmingwxx.7z and you will get **mingw** folder along with all the necessory files, so now copy **mingw** folder to **C:/** drive manually.
+
 ![olcPixelGameEngineVSCode](./resources/img4.jpg)
+
 - **step4**: Set windows environment variable path which points compiler as "C:\mingw64\bin"
-![olcPixelGameEngineVSCode](./resources/img1.JPG)
+
+![olcPixelGameEngineVSCode](./resources/img1.jpg)
+
 - **step5**: Restart PC.
 - **step6**: open widows terminal and type **gcc --version** it should give ouput as its installed version no.
+
 ![olcPixelGameEngineVSCode](./resources/img2.JPG)
 
 
 **Compiling Steps:**
 
-- **step1**: Clone/Download this repository, which includes all VScode configurations + PGE header and sample program.
+- **step1**: Make one new folder anywhere or preferably on your desktop. Example: "pge_test".
+
+![olcPixelGameEngineVSCode](./resources/img6.jpg)
+
+- **step2**: Clone/Download **official OLC PGE repository** [ [Download](https://github.com/OneLoneCoder/olcPixelGameEngine) ], 
+And get two files named:
+1. *olcExampleProgram.cpp*
+2. *olcPixelGameEngine.h*
+
+![olcPixelGameEngineVSCode](./resources/img11.JPG)
+![olcPixelGameEngineVSCode](./resources/img12.JPG)
+
+- **step3**: Similarly get .vscode folder from **this** repository.
+
 ![olcPixelGameEngineVSCode](./resources/img5.JPG)
-- **step2**: Verify that you got **.vscode** folder with cloned or downloaded repository contents.
-- **step3**: Open VScode
-- **step4**: In VScode **Home** select File > Open Folder > and select this downloaded repository folder
-- **step5**: Open olcExampleProgram.cpp file with double click on it.
+
+- **step4**: Verify that you got **.vscode** folder with cloned or downloaded from THIS repository contents.
+- **step5**: Now inside your "pge_test" folder, put this .vscode folder and two files downloaded in step1.
+
+![olcPixelGameEngineVSCode](./resources/img7.jpg)
+
+- **step6**: Open VScode
+- **step7**: In VScode **Home** select File > Open Folder > and select your "pge_test" folder.
+
+![olcPixelGameEngineVSCode](./resources/img8.JPG)
+
+- **step8**: Now verify in VSCode IDE that folder and files are recognized and listed properly.
+
+![olcPixelGameEngineVSCode](./resources/img9.JPG)
+
+- **step9**: Open olcExampleProgram.cpp file with double click on it.
 - **step6**: press "ctrl+shft+b"
+
+![olcPixelGameEngineVSCode](./resources/img10.JPG)
+
 - **step7**: You will get **.exe** named olcExampleProgram.exe in same directory
 - **step8**: Run it in terminal with **./olcExampleProgram.exe** command, it should run.
 Done!
@@ -64,7 +99,7 @@ If you are already experianced with VSCode IDE, then simply copy and past conten
 2_tasks.txt
 files and modify it as per your convenience.
 
-## Manual with Terminal:
+## Manually with Terminal:
 You can also compile PGE in MS terminal as well as VSCode terminal by following method.
 You must place both
 olcExampleProgram.cpp
