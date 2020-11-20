@@ -6,7 +6,7 @@ class BreakOut : public olc::PixelGameEngine
 public:
 	BreakOut()
 	{
-		sAppName = "TUTORIAL - BreakOut Clone";
+		sAppName = "Pixel_Experiments";
 	}
 
 public:

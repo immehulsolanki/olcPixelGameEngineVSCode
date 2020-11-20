@@ -6,7 +6,7 @@ class BreakOut : public olc::PixelGameEngine
 public:
 	BreakOut()
 	{
-		sAppName = "TUTORIAL - BreakOut Clone";
+		sAppName = "Pixel_Experiments";
 	}
 
 public:
@@ -21,14 +21,10 @@ public:
 		Clear(olc::DARK_BLUE);
 
 		// Draw Boundary
-		DrawLine(0, 0, 0, 7, olc::WHITE);
-		DrawLine(1, 0, 1, 7, olc::YELLOW);
-		DrawLine(2, 0, 2, 7, olc::CYAN);
-		DrawLine(3, 0, 3, 7, olc::MAGENTA);
-		DrawLine(4, 0, 4, 7, olc::RED);
-		DrawLine(5, 0, 5, 7, olc::BLUE);
-		DrawLine(6, 0, 6, 7, olc::BLACK);
-		
+		DrawLine(0, 0, 10, 0, olc::YELLOW); //x1,y1, x2,y2, color
+		FillRect(2, 7, 3, 2, olc::GREEN ); //x1,y1(topleft corner), width,height, color
+		// we can also use ScreenHeight() - 20 and ScreenWidth() - 10 functions.
+        FillCircle({5,5}, 1, olc::CYAN);
 		return true;
 	}
 };
@@ -36,7 +32,7 @@ public:
 int main()
 {
 	BreakOut demo;
-	if (demo.Construct(7, 7, 50, 50))
+	if (demo.Construct(10, 10, 50, 50))
 		demo.Start();
 	return 0;
 }

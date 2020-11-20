@@ -1,6 +1,6 @@
 [![Generic badge](https://img.shields.io/badge/status-beta-red.svg)](https://github.com/immehulsolanki/olcPixelGameEngineVSCode/blob/master/README.md) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/immehulsolanki/olcPixelGameEngineVSCode) [![made-with-c++17](https://img.shields.io/badge/Made%20with-C++17-1f425f.svg)](https://isocpp.org/) 
 
-# What is olcPixalGameEngine?
+# What is olcPixelGameEngine?
 
 The official distribution of olcPixelGameEngine, a tool used in user javidx9's C++ tutorial YouTube videos and projects.
 You only need the one file - olcPixelGameEngine.h - included in your project!
@@ -13,7 +13,7 @@ Provides a fast, richly featured, cross platform pixel drawing and user interfac
 
 Reference: https://github.com/OneLoneCoder/olcPixelGameEngine
 
-# olcPixalGameEngine with VSCode [Windows10]:
+# olcPixelGameEngine with VSCode [Windows10]:
 **Requirement:**
 1. Latest VSCode for Windows [Download](https://code.visualstudio.com/)
 2. Latest MinGW from Winlibs with atleast **GCC version 10.2.x** [Download](http://winlibs.com/)
@@ -60,15 +60,15 @@ You are not supposed to find this libs manually it comes with the compiler it se
 Done!
 
 If you are already experianced with VSCode IDE, then simply copy and past contents from:
-1_c_cpp_properties.json
-2_tasks.json
+1_c_cpp_properties.txt
+2_tasks.txt
 files and modify it as per your convenience.
 
 ## Manual with Terminal:
 You can also compile PGE in MS terminal as well as VSCode terminal by following method.
 You must place both
 olcExampleProgram.cpp
-olcPixalGameEngine.h
+olcPixelGameEngine.h
 in **same folder** and run following command in MS Terminal or VScode Terminal:
 
 ```g++ -std=c++17 olcExampleProgram.cpp -luser32 -lgdi32 -lopengl32 -lgdiplus -lShlwapi -ldwmapi -lstdc++fs```
