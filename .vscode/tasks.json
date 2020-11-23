@@ -18,7 +18,10 @@
 				"-lopengl32",
 				"-lShlwapi",
 				"-ldwmapi",
-				"-lstdc++fs"
+				"-lstdc++fs",
+				
+				"&&",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],
 			"options": {
 				"cwd": "C:\\mingw64\\bin"
