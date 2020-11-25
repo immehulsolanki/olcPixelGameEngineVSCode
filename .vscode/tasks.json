@@ -10,8 +10,7 @@
 				"-std=c++17",
 				"${file}",
 				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe",				
-				"-lpthread",				
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",										
 				"-luser32",
 				"-lgdi32",
 				"-lgdiplus",
@@ -19,7 +18,6 @@
 				"-lShlwapi",
 				"-ldwmapi",
 				"-lstdc++fs",
-				
 				"&&",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],
